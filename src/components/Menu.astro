@@ -1,3 +1,51 @@
 ---
 
 ---
+
+<div class="menu">
+    <ul>
+        <li>
+            <a href="/">Accueil</a>
+        </li>
+        <li>
+            <a href="contact">Contact</a>
+        </li>
+    </ul>
+</div>
+
+<style>
+    .menu{
+    display: none;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 4rem;
+    text-transform: uppercase;
+    }
+    .menu a{
+    color: var(--textcolor);
+    margin: 0 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    padding:0.5rem 1rem;
+    font-size: 1.15rem;
+    }
+    ul{
+    list-style: none;
+    background-color: var(--background);
+    }
+    ul li a{
+        display: block ;
+        padding: 20px 25px;
+        text-decoration: none;
+        text-align: center;
+        font-size: large;
+        z-index: 97;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+</style>

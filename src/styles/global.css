@@ -1,9 +1,10 @@
 :root{
-    --primary : ;
+    --primary :#00008F ;
+    --light:#d1d7d8 ;
     --darkprimary : ;
-    --textcolor : ;
+    --textcolor : #3B38C1;
     --textfooter : ;
-    --background : ;
+    --background :#ffffff ;
 }
 *{
     margin: 0;
@@ -19,4 +20,20 @@ html {
 code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
         Bitstream Vera Sans Mono, Courier New, monospace;
+}
+body{
+    display: flex  ;
+    flex-direction: column ;
+    height: 100vh;
+}
+.contenu{
+    flex: 1 0 auto;
+}
+@media (min-width: 1210px) {
+    .hamburger, .mobile-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
 }
