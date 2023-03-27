@@ -4,10 +4,12 @@
 
 <div class="menu">
     <ul>
-        <li>
+        <li class="box">
+            <img src="home.svg" alt="Icone Accueil" >
             <a href="/">Accueil</a>
         </li>
-        <li>
+        <li class="box">
+            <img src="/contact.svg" alt="Icone Contact">
             <a href="contact">Contact</a>
         </li>
     </ul>
@@ -24,16 +26,20 @@
     }
     .menu a{
     color: var(--textcolor);
-    margin: 0 0.75rem;
+    margin: 0 0.25rem;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
-    padding:0.5rem 1rem;
+    padding:0.5rem 0.35rem;
+    margin-right: 5rem;
     font-size: 1.15rem;
     }
     ul{
     list-style: none;
     background-color: var(--background);
+    display: flex;
+    flex-direction: row;
+    
     }
     ul li a{
         display: block ;
@@ -43,9 +49,11 @@
         font-size: large;
         z-index: 97;
     }
-    ul li{
-        display: inline-block;
-        position: relative;
-        text-align: center;
+    .box{
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        color: var(--primary);
     }
 </style>
