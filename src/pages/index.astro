@@ -3,6 +3,61 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Accueil">
-	<div></div>
-	<div></div>
+	<main>
+	<div class="white">
+		<h1>Bienvenue</h1>
+		<h2>Vous pouvez retrouver ci-dessous une notre vidéo promotionnel pour les contrats type PER/PERIN</h2>
+	</div>
+	<div class="blue">
+		<div class="container"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+	</div>
+	<div class="white">
+		<h2>Veuillez trouver nos deux questionnaire :</h2>
+		<div>
+			<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Questionnaire 1</a>
+			<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Questionnaire 2 </a>
+		</div>
+	</div>
+	</main>
 </Layout>
+
+<style>
+	
+	h1{
+		color:var(--primary) ;
+		margin-bottom: 2rem;
+		font-size: 3rem;
+		font-family: 'Taviraj', serif;
+	}
+
+	h2{
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+	.white{
+		background-color: var(--background);
+		padding: 3rem 2rem ;
+		text-align: center;
+		color: #333333;
+	}
+	.container{
+		width: 711.11px;
+		height: 400px;
+	}
+	.blue{
+		display: flex;
+		justify-content: center;
+		padding: 3rem 2rem ;
+		background-color: var(--primary);
+	}
+	a{
+		padding: 2rem;
+		text-decoration: none;
+		font-size: larger;
+		color: var(--backgroundfooter);
+		font-weight: 500;
+	}
+	a:hover{
+		color: var(--primary);		
+	}
+</style>
