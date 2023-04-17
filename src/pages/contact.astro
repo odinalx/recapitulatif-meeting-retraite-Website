@@ -3,5 +3,107 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contact">
-	
+    <main>
+        <div class="container">
+            <h1>Nous Contacter</h1>
+            <h2>Au 01 60 29 85 12</h2>
+            <h2>Agence Axa au <a href="https://goo.gl/maps/RECzXryojmqaEKeV6" target="_blank">36 Avenue Charles Rouxel 77340 Pontault Combault</a></h2>
+        </div>
+        <h1>Nos horraires d'ouverture</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jours</th>
+                    <th>Matin</th>
+                    <th>Après-midi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Lundi</th>
+                    <td>Fermé</td>
+                    <td>14h30 - 18h30</td>
+                </tr>
+                <tr>
+                    <th>Mardi</th>
+                    <td>09h00 - 12h00</td>
+                    <td>14h30 - 18h30</td>
+                </tr>
+                <tr>
+                    <th>Mercredi</th>
+                    <td>09h00 - 12h00</td>
+                    <td>14h30 - 18h30</td>
+                </tr>
+                <tr>
+                    <th>Jeudi</th>
+                    <td>09h00 - 12h00</td>
+                    <td>14h30 - 18h30</td>
+                </tr>
+                <tr>
+                    <th>Vendredi</th>
+                    <td>09h00 - 12h00</td>
+                    <td>14h30 - 18h30</td>
+                </tr>
+                <tr>
+                    <th>Samedi</th>
+                    <td>09h00 - 12h00</td>
+                    <td>Fermé</td>
+                </tr>
+                <tr>
+                    <th>Dimanche</th>
+                    <td>Fermé</td>
+                    <td>Fermé</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
 </Layout>
+
+<style>
+h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+a{
+    text-decoration: none;
+    color: var(--backgroundfooter);
+}    
+a:hover{
+	color: var(--primary);		
+}
+    
+h1{
+    text-align: center;
+    color:var(--primary) ;
+	margin: 2rem;
+	font-size: 3rem;
+	font-family: 'Taviraj', serif;
+}
+table {
+  table-layout: fixed;
+  width: 30%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+th,td {
+  padding: 5px;
+}
+@media (max-width: 900px){
+    table{
+        width: 65%;
+    }
+}
+@media (max-width: 600px){
+    table{
+        width: 100%;
+    }
+}
+</style>
