@@ -1,3 +1,67 @@
 ---
 
 ---
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="copyright">
+            <p>Copyright © 2023 Stanislas. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+
+<style> 
+.footer{
+    width: 100%;
+    background-color: var(--backgroundfooter);
+    padding: 25px 0 25px 0;
+    color: var(--textfooter);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+.footer-container{
+    margin: auto;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 0.80em;
+    font-weight: 200;
+    color: var(--textfooter);
+}
+
+
+
+@media (max-width: 805px){
+
+.row{
+    flex-direction: column;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-col{
+    border-bottom:var(--background) solid;
+    padding-bottom: 0;
+    
+}
+.row div div:last-child{
+    border-bottom: solid var(--primary) 1px;
+    padding-bottom: 30px;
+}
+}
+
+</style>

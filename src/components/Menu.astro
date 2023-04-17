@@ -5,12 +5,10 @@
 <div class="menu">
     <ul>
         <li class="box">
-            <img src="home.svg" alt="Icone Accueil" >
-            <a href="/">Accueil</a>
+            <a href="/"><img src="home.svg" alt="Icone Accueil" > Accueil </a>
         </li>
         <li class="box">
-            <img src="/contact.svg" alt="Icone Contact">
-            <a href="contact">Contact</a>
+            <a href="contact"> <img src="/contact.svg" alt="Icone Contact"> Contact </a>
         </li>
     </ul>
 </div>
@@ -21,7 +19,8 @@
     flex: 1 1 0%;
     justify-content: center;
     align-items: center;
-    margin: 1rem 4rem;
+    margin: 0rem 4rem;
+    margin-top: 1rem;
     text-transform: uppercase;
     }
     .menu a{
@@ -29,31 +28,41 @@
     margin: 0 0.25rem;
     font-weight: 600;
     text-decoration: none;
-    transition: 0.3s;
     padding:0.5rem 0.35rem;
     margin-right: 5rem;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     }
     ul{
     list-style: none;
     background-color: var(--background);
     display: flex;
     flex-direction: row;
-    
     }
-    ul li a{
-        display: block ;
-        padding: 20px 25px;
-        text-decoration: none;
-        text-align: center;
-        font-size: large;
-        z-index: 97;
-    }
-    .box{
+    a{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: large;
+        z-index: 97;
     }
     img{
         color: var(--primary);
     }
+    .box .active{
+        padding-bottom: 1rem;
+        border-bottom: solid #F07662 4px;
+    }
 </style>
+
+<script>
+    const nav = document.querySelector(".menu");
+    const navLinks = nav.querySelectorAll("a");
+    const currentURL = window.location.href;
+    navLinks.forEach((link) => {
+      if (link.href === currentURL) {
+        link.classList.add("active");
+      }
+    });
+  </script>
