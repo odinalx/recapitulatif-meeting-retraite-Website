@@ -5,33 +5,61 @@
 
 <footer class="footer">
     <div class="footer-container">
+        <div class="space">Suivre AXA</div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/axafrance" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/axafrance/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/AXAFrance" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/axa-france/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/user/AXAFranceChaine" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
         <div class="copyright">
-            <p>Copyright © 2023 Stanislas. Tous droits réservés.</p>
+            <p>Copyright © 2023 ALEXANDRE Odin. Tous droits réservés.</p>
         </div>
     </div>
 </footer>
 
 
 <style> 
+.space{
+    margin-bottom: 10px;
+}
 .footer{
     width: 100%;
     background-color: var(--backgroundfooter);
     padding: 25px 0 25px 0;
     color: var(--textfooter);
 }
-.row{
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
-}
 ul{
     list-style: none;
 }
 .footer-container{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
-
+.social-links{
+    margin-bottom: 15px;
+}
+.footer .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: var(--primary);
+        margin-right:0 10px 10px 10px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: var(--background);
+        transition: all 0.5s ease;
+}
+.footer .social-links a:hover{
+        color: var(--backgroundfooter);
+        background-color: var(--background);
+}
 .copyright{
     display: flex;
     justify-content: center;

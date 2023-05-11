@@ -5,10 +5,27 @@ import Box from "../components/Box.astro"
 
 <Layout title="Contact">
     <main>
-        <div>
-            <Box description=""></Box>
-            <Box description=""></Box>
-            <Box description=""></Box>
+        <div class="container">
+            <Box description="Je m'appelle Axelle Courant, j'ai 21 ans et je travaille chez CNP Assurances en tant que spécialiste Marketing produits. Je suis actuellement en cours de formation pour obtenir ma licence en tant que Conseiller, Souscripteur et Gestionnaire en assurance à l'Enass. Mon travail consiste à développer des produits d'assurance attrayants et pertinents pour nos clients, tout en m'assurant que les risques sont correctement évalués et gérés."></Box>
+            <Box description="Je suis Stanislas Denoyelle, j'ai 20 ans et je travaille chez LUKO Assurances en tant que gestionnaire de sinistre MRH. Je suis également en cours de formation pour obtenir ma licence en tant que Conseiller, Souscripteur et Gestionnaire en assurance à l'Enass. Mon travail quant à lui consiste à instruire et gérer les dossiers sinistres en passant par l'indemnisation client. En espérant que notre projet vous ait plu !"></Box>
+            <Box description="Je m'appelle Younes Fathi, j'ai 21 ans et je travaille chez AXA Assurances en tant que collaborateur d'agence dans l'agence ayant aidé à la mise en place de ce projet. Je suis, comme mes camarades actuellement en cours de formation pour obtenir ma licence en tant que Conseiller, Souscripteur et Gestionnaire en assurance à l'Enass."></Box>
         </div>
     </main>
 </Layout>
+<style>
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    @media (max-width: 1415px) {
+		.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0rem;
+	}
+	}
+</style>

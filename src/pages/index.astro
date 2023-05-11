@@ -5,17 +5,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Accueil">
 	<main>
 	<div class="white">
-		<h1>Bienvenue</h1>
-		<h2>Vous pouvez retrouver ci-dessous une notre vidéo promotionnel pour les contrats type PER/PERIN</h2>
+		
+		<h1>Retrouvez ci-dessous notre vidéo promotionnelle <br> pour les contrats type PER/PERIN</h1>
 	</div>
 	<div class="blue">
+		<div class="container2"><img src="/note.svg" alt="Bloc Note"></div>
 		<div class="container"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+		<div class="container2"><img src="/pen.svg" alt="Stylo Bille"></div>
 	</div>
 	<div class="white">
-		<h2>Veuillez trouver notre questionnaire ci-dessous :</h2>
-		<div>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfA0nV7VyMjlpIcLhpxtDPtPSvRfrltaAOk0ulkC1cX4HvF4Q/viewform" target="_blank">Questionnaire</a>
-		</div>
+		<h2>Voici le lien vers notre <a href="https://docs.google.com/forms/d/e/1FAIpQLSfA0nV7VyMjlpIcLhpxtDPtPSvRfrltaAOk0ulkC1cX4HvF4Q/viewform" target="_blank">questionnaire</a> de satisfaction</h2>
 	</div>
 	</main>
 </Layout>
@@ -43,21 +42,48 @@ import Layout from "../layouts/Layout.astro";
 		width: 711.11px;
 		height: 400px;
 	}
+	.container2{
+		padding: 0rem 5rem ;
+	}
+	.container2 img{
+		width: 85%;
+	}
+	
 	.blue{
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		padding: 3rem 2rem ;
 		background-color: var(--primary);
 	}
 	a{
-		padding: 2rem;
 		text-decoration: none;
-		font-size: larger;
 		color: var(--backgroundfooter);
 		font-weight: 500;
 	}
 	a:hover{
 		color: var(--primary);		
+	}
+	@media (max-width: 1400px) {
+		.container2 img{
+		max-width: 70%;
+	}
+	.container2{
+		padding: 0rem 1rem ;
+	}
+	}
+	@media (max-width: 900px) {
+		.container2 img{
+		max-width: 50%;
+	}
+	.container2{
+		padding: 0rem 0.25rem ;
+	}
+	}
+	@media (max-width: 700px) {
+		.container2 img{
+		display: none;
+	}
 	}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
