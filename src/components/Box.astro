@@ -1,0 +1,46 @@
+---
+export interface Props {
+    description: string,
+}
+
+const { description} = Astro.props;
+---
+
+<div class="box">
+    <p>{description}</p>
+</div>
+
+
+<style>
+    .box{
+        background-color: var(--textcolor);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 30px;
+        margin-bottom: 30px;
+        max-width: 360px;
+        box-shadow: 0px 10px 24px 6px rgb(0 0 0 / 6%);
+        margin: 50px;
+    }
+    h3{
+        color: var(--primary);
+        margin-top: 10px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    h4{
+        color: var(--textfooter);
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    p{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+</style>
